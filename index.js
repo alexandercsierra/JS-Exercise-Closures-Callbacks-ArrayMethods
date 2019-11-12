@@ -255,13 +255,12 @@ function counterMaker() {
   // BROKEN CODE STARTS
   var count = 0;
   return function counter() {
-    ++count;
-    return count;
+    return count++;
   }
   // BROKEN CODE ENDS
 };
 
-// const counter = counterMaker();
+const counter = counterMaker();
 
 /**
  * ### Challenge `counterMakerWithLimit`
@@ -283,9 +282,17 @@ function counterMaker() {
  * counter() // should return 0
  * etc
 */
-function counterMakerWithLimit(/* CODE HERE */) {
-  /* CODE HERE */
-}
+function counterMakerWithLimit(limit) {
+  var count = 0;
+    return function counter(){
+      if (count <= limit) {
+        return count++;
+      } else if (count = limit) {
+        count = 0;
+        return count++;
+      }
+    }
+  }
 
 /////////////// END OF CHALLENGE ///////////////
 /////////////// END OF CHALLENGE ///////////////
