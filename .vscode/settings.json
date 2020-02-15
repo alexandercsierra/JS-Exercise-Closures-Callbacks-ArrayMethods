@@ -1,3 +1,8 @@
 {
-  "standard.enable": false
+  "standard.enable": false,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#58014D",
+    "titleBar.activeBackground": "#7B016C",
+    "titleBar.activeForeground": "#FFF8FE"
+  }
 }

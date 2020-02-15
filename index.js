@@ -262,6 +262,8 @@ function counterMaker() {
 
 const counter = counterMaker();
 
+console.log("HIIIIIIIIIIIIIIIIIIII")
+
 /**
  * ### Challenge `counterMakerWithLimit`
  * 
@@ -287,7 +289,7 @@ function counterMakerWithLimit(limit) {
     return function counter(){
       if (count <= limit) {
         return count++;
-      } else if (count = limit) {
+      } else {
         count = 0;
         return count++;
       }
